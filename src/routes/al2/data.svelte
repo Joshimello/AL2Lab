@@ -34,8 +34,9 @@
       <img src={'/assets/RESOURCES_' + item.toUpperCase() + '.png'} alt={item} class="h-5" />
     </div>
     <div class="flex items-center justify-end gap-2">
-      <span>{mcount.toFixed($toFix)}</span>
-      <img src={'/assets/MACHINES_' + machine.toUpperCase() + '_TOP.png'} alt={machine} class="h-5" />    </div>
+      <span>{mcount.toFixed($toFix)} ({Math.ceil(mcount)})</span>
+      <img src={'/assets/MACHINES_' + machine.toUpperCase() + '_TOP.png'} alt={machine} class="h-5" />
+    </div>
   </div>
   {/each}
   {/each}
